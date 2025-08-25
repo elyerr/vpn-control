@@ -30,7 +30,7 @@
             <q-list class="nav-list">
                 <q-item>
                     <q-item-section class="flex justify-center">
-                        <img src="/img/icon.webp" class="logo" />
+                        <q-icon name="vpn_lock" size="xl" color="primary" />
                     </q-item-section>
                 </q-item>
 
