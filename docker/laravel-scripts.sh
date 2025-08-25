@@ -8,18 +8,13 @@ echo "⚙️ Running system configuration..."
 
 cp /root/.env /var/www/.env
 
-chown -R www-data:www-data .
-
-find . -type d -exec chmod 750 {} \;
-find . -type f -exec chmod 640 {} \;
-
-chmod -R 770 storage
-chmod -R 770 bootstrap/cache
-chmod 400 .env
- 
 php artisan settings:system-start
 
+find . -type d -exec chmod 750 {} \;
+find . -type f -exec chmod 640 {} \; 
 chmod 600 secrets/*.pem
+chmod 400 .env
+chown -R www-data:www-data .
 
 echo "Starting PHP-FPM..."
 php-fpm83 -D || { echo "Failed to start PHP-FPM"; exit 1; }

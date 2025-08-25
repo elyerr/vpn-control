@@ -4,6 +4,9 @@ IMAGE="elyerr/vpn-control:v2.0.0"
 COMPOSE_FILE="docker-compose-prod.yml"
 ENV_FILE=".env"
 
+echo "Downloading image ..."
+docker pull $IMAGE
+
 # Required environment variables
 required_keys=(
     DB_CONNECTION

@@ -24,7 +24,7 @@ services:
         image: adminer:latest
         restart: always
         ports:
-            - "8002:8080"
+            - "8004:8080"
         depends_on:
             db:
                 condition: service_healthy
@@ -38,7 +38,7 @@ services:
         image: elyerr/vpn-control
         restart: always
         ports:
-            - "8001:80"
+            - "8003:80"
         depends_on:
             db:
                 condition: service_healthy

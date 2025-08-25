@@ -17,6 +17,7 @@ auth.json
 npm-debug.log
 yarn-error.log
 docker-compose-prod.yml
+docker-compose-dev.yml
 /.fleet
 /.idea
 /.vscode
