@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE="elyerr/vpn-control:v2.0.0"
+IMAGE="elyerr/vpn-control:latest"
 COMPOSE_FILE="docker-compose-prod.yml"
 ENV_FILE=".env"
 
